@@ -13,37 +13,38 @@ MVT Structure has the following three parts –
 
 
 
-Setting up Virtual environment
+# Setting up Virtual environment
 1. pip install virtualenvwrapper-win
 2. mk virtualenv custom_virtual_env_name
 
-To work inside a already created v. env.
+# To work inside a already created v. env.
 3. workon custom_virtual_env_name
 
-Setting up django inside v. env.
+# Setting up django inside v. env.
 4. pip install djangorestframework
 5. pip install markdown       # Markdown support for the browsable API.
 6. pip install django-filter  # Filtering support
 
-Creating new project
+# Creating new project
 7. django-admin startproject mysite
 
-To make new apps inside the project
+# To make new apps inside the project
 8. python manage.py startapp polls
 
-To run the server
+# To run the server
 9. python manage.py runserver
 
 
-Migrations
+# Migrations
 10. python manage.py makemigrations 
 
-Your models will be scanned and compared to the versions currently contained in your migration files, and then a new set of migrations will be written out. 
-Once you have your new migration files, you should apply them to your database to make sure they work as expected:
+# Your models will be scanned and compared to the versions currently contained in your migration files, and then a new set of migrations will be written out. 
+# Once you have your new migration files, you should apply them to your database to make sure they work as expected:
 
 11. python manage.py migrate
 
 
+# Resources
 
 A. Resources for uploading a file:
 https://blog.vivekshukla.xyz/uploading-file-using-api-django-rest-framework/
